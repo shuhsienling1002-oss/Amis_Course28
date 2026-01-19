@@ -72,7 +72,7 @@ st.markdown("""
 vocab_data = [
     {"amis": "Adada", "chi": "痛 / 生病", "icon": "🤒", "source": "Row 470"},
     {"amis": "Maroray", "chi": "累 / 辛苦", "icon": "😫", "source": "Row 465"},
-    {"amis": "Kaeso'", "chi": "好吃 / 美味", "icon": "😋", "source": "Row 353"},
+    {"amis": "Ka^eso'", "chi": "好吃 / 美味", "icon": "😋", "source": "Row 353"},
     {"amis": "Takaraw", "chi": "高", "icon": "📏", "source": "Row 19"},
     {"amis": "Fa'edet", "chi": "熱", "icon": "🔥", "source": "Row 1690"},
     {"amis": "Si'enaw", "chi": "冷", "icon": "❄️", "source": "Row 254"},
@@ -89,7 +89,7 @@ vocab_data = [
 # --- 句子庫 (7句: 嚴格源自 CSV 並移除連字號) ---
 sentences = [
     {"amis": "Adihay ko mikaenan no mako, saka adada ko tiyad no mako.", "chi": "我吃的太多，所以我肚子痛。", "icon": "🤒", "source": "Row 470"},
-    {"amis": "Kaeso' kora a titi a kaenen.", "chi": "那塊肉吃起來很美味。", "icon": "😋", "source": "Row 353"},
+    {"amis": "Ka^eso' kora a titi a kaenen.", "chi": "那塊肉吃起來很美味。", "icon": "😋", "source": "Row 353"},
     {"amis": "Yo wawaho kako 'i, 'aloman ko tamdaw i niyaro'.", "chi": "當我小時候，在部落人很多。", "icon": "👥", "source": "Row 323"},
     {"amis": "Si'enaw ko romi'ad.", "chi": "天氣冷。", "icon": "❄️", "source": "Row 254"},
     {"amis": "Fa'edet ko romi'ad anini.", "chi": "今天天氣熱。", "icon": "🔥", "source": "Row 1690"},
@@ -107,8 +107,8 @@ raw_quiz_pool = [
         "hint": "Adada ko tiyad (肚子痛) (Row 470)"
     },
     {
-        "q": "Kaeso' kora a titi a kaenen.",
-        "audio": "Kaeso' kora a titi a kaenen",
+        "q": "Ka^eso' kora a titi a kaenen.",
+        "audio": "Ka^eso' kora a titi a kaenen",
         "options": ["那塊肉很美味", "那塊肉很硬", "那塊肉很貴"],
         "ans": "那塊肉很美味",
         "hint": "Kaeso' (好吃) (Row 353)"
@@ -266,3 +266,4 @@ with tab2:
             
             st.session_state.quiz_questions = final_qs
             safe_rerun()
+
